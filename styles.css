@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(9,8,22);
+background: linear-gradient(90deg, rgba(9,8,22,1) 0%, rgba(53,53,176,1) 50%, rgba(13,8,22,1) 100%);
+font-family: "Poppins";
+color: white;
+}
+
+nav{
+    margin: 2rem 2rem 2rem;
+}
+
+.nav-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-left-side{
+   
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-right-side{
+   
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem 0 3rem;
+    align-items: center;
+}
+#favourites{
+    font-size: 1.15rem;
+}
+#user-image{
+    width: 7rem;
+    height: 5rem;
+    
+}
+
+.search-div{
+    padding: 1rem;
+    border-radius: 15px;
+   
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    gap: 10px;
+}
+
+#search-input{
+    background-color: transparent;
+    border: none;
+    font-family: "Poppins" ;
+    outline: none;
+}
+#search-input:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.user-image-div {
+    border-radius: 50%; 
+    width: 6rem; 
+    height: 6rem; 
+    overflow: hidden; 
+    border: 4px solid transparent; 
+    background: linear-gradient(to right, #00c6ff, #0072ff); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: transform 0.3s ease, border-color 0.3s ease; 
+}
+
+.user-image-div:hover {
+    transform: scale(1.1); 
+    border-color: #ff6b6b; 
+}
+
+#user-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+
+.fa-microphone:hover{
+      color: rgb(95, 10, 252);
+      cursor: pointer;
+      
+}
+.fa-magnifying-glass:hover{
+    color: rgb(95, 10, 252);
+    cursor: pointer;
+}
+
+.bell {
+    width: 60px; 
+    height: 60px;  
+    display: flex;
+    justify-content: center;  
+     align-items: center; 
+     background-color: #f0f0f0; 
+    border-radius: 50%;
+    position: relative; 
+}
+
+#bell-icon {
+    font-size: 28px; 
+    color: #000; 
+}
+.bell:hover {
+    transform: scale(1.1) rotate(10deg);
+    transition: transform 0.3s ease-in-out;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+}
+
+#favourites a{
+    color: white;
+      text-decoration: none !important;
+}
+
+#favourites:active{
+    color: red;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+.notification-count {
+    position: absolute; 
+    top: -4px; 
+    right: 0px; 
+    background-color: red; 
+    color: white;
+    font-size: 14px; 
+    padding: 2px 6px;
+    border-radius: 50%; 
+    min-width: 18px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-weight: bold; 
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); 
+}
+
+
+.logo-design{
+    box-shadow: 0 4px 8px 0 rgba(247, 243, 243, 0.2), 0 6px 20px 0 rgba(203, 194, 194, 0.19);
+    border-radius: 10%;
+    overflow: hidden;
+    height: 8rem;
+    width: 16rem;
+}
+#cn-logo{
+    width: 16rem;
+    height: 8rem;
+}
+
+
+.parent-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+    
+}
+
+.container-left {
+    width: 65%; /* Adjust the width as per your layout requirement */
+    margin-right: 10px; /* Optional: add space between the two containers */
+    
+}
+
+.container-right {
+    width: 30%; /* Adjust the width as per your layout requirement */
+  
+}
+.new-releases .banner img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.latest-release, .popular-artists {
+    margin-bottom: 30px;
+}
+
+.latest-release h2, .popular-artists h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.release-list {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.release-item {
+    background-color: #08012a;
+    padding: 10px;
+    border-radius: 10px;
+    width: 23%;
+}
+
+.release-item:hover{
+    background-color: #000;
+    scale: 105%;
+}
+
+.release-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.release-info p {
+    margin: 5px 0;
+}
+
+.artist-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.artist-item {
+    width: 16%;
+    text-align: center;
+}
+
+.artist-item img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.artist-item img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+}
+
+
+
+
+.queue {
+    width: 90%;
+   
+    padding: 20px;
+}
+
+.queue h2 {
+    margin-bottom: 2rem;
+}
+
+.queue-list {
+    list-style: none;
+    padding: 0;
+    margin: 2px 0px ;
+    
+    
+    
+}
+
+/* css for glow */
+
+
+/* ----------------------------------- */
+.queue-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  
+     padding: 10px 15px;
+     border-radius: 20px;
+     background-color: #170b55;
+     box-shadow: rgba(72, 135, 202, 0.3) 0 0 20px 10px;
+
+}
+
+.queue-list li img {
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.queue-list li .track-number {
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#like{
+    padding: 0 20px ;
+}
+#like:hover{
+    color: red;
+    scale: 115%;
+   
+}
+
+#queue-singer-name{
+    padding: 0 10px;
+}
+
+.queue-list li .track-name {
+    flex: 1;
+}
+
+.queue-list li .like-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #3a3a3c;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+
+.music-player {
+    width: 100%;
+    background-color: #150727;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.current-track-info {
+    display: flex;
+    align-items: center;
+}
+
+.current-track-info img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.current-track-info span {
+    padding-left: 30px;
+}
+
+.player-controls button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.player-controls button:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.volume-control input {
+    margin-right: 2rem;
+}
+
+.volume-control i {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.play-pause-button {
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.play-icon, .pause-icon {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pause-icon {
+    opacity: 0;
+    position: absolute;
+}
+
+#play-pause-toggle:checked + .play-pause-button .play-icon {
+    opacity: 0;
+}
+
+#play-pause-toggle:checked + .play-pause-button .pause-icon {
+    opacity: 1;
+}
+
+.play-pause-button:hover {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border-radius: 50%;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+
+.music-categories, .featured-playlists, .latest-english-releases {
+    margin: 5rem 0;
+    
+}
+
+.latest-english-releases h2{
+    margin-bottom: 2rem 0;
+}
+
+.music-categories h2, .latest-english-releases h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.category-list, .english-release-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-item, .english-release-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.category-item img, .english-release-item:hover{
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+    transition: ease-in-out 0.2s;
+    
+}
+
+.english-release-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.featured-playlists{
+    display: flex;
+    gap: 30px;
+    margin: 5rem 0;
+}
+
+.playlist-item {
+    width: 32%;
+    position: relative;
+}
+
+.playlist-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.playlist-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+
+/* -----------------------------Fav.html-- css -- section ---------------------------- */
+
+
+.navigation {
+    border: 2px solid rgb(255, 254, 254);
+} 
+
+.parent-nav{
+    border: 2px solid red;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
